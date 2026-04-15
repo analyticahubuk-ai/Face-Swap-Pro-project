@@ -1,0 +1,12 @@
+
+opencv-python
+onnxruntime-gpu; sys_platform != 'darwin'
+onnxruntime; sys_platform == 'darwin'
+numpy<2.0.0
+tqdm
+requests
+fastapi
+uvicorn
+python-multipart
+mediapipe
+moviepy==1.0.3

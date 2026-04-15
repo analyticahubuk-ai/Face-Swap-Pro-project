@@ -1,0 +1,26 @@
+# --- System Specific (MUST IGNORE) ---
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# --- Folders with Samples ---
+# Ignore all files in uploads, but allow video1.mp4
+uploads/*
+!2ab8b97b-f56e-4d1d-b57b-95f506883f76
+
+# Ignore all files in outputs, but allow one result file
+# (Replace 'sample_result.mp4' with your actual filename)
+outputs/*
+!outputs/2ab8b97b-f56e-4d1d-b57b-95f506883f76
+
+# --- Logs ---
+*.log
+analysis_results.txt
+
+# --- AI Models ---
+# Uncomment the line below if inswapper_128.onnx is larger than 100MB
+inswapper_128.onnx

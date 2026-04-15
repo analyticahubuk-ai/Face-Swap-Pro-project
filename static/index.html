@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOTA Face Swap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Face Swap <span class="highlight">Pro</span></h1>
+            <p>SOTA Deepfake Engine with <span class="feature-tag">Face Focus</span> & <span
+                    class="feature-tag">Auto-Stabilization</span></p>
+        </header>
+
+        <main>
+            <div class="features-box">
+                <span>✨ 720p Optimized</span>
+                <span>✨ Smooth Stabilization</span>
+                <span>✨ Same-Zoom Focus</span>
+            </div>
+
+            <div class="upload-grid">
+                <div class="card" id="source-card">
+                    <div class="card-badge">Step 1</div>
+                    <h2>Input Face</h2>
+                    <p class="card-desc">Clear face photo for swapping</p>
+                    <div class="drop-zone" id="source-drop">
+                        <p>Drag & Drop Image</p>
+                        <input type="file" id="source-input" accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div class="card" id="target-card">
+                    <div class="card-badge">Step 2</div>
+                    <h2>Target Videos</h2>
+                    <p class="card-desc">Process local files or remote links</p>
+                    
+                    <div class="video-options">
+                        <button type="button" class="opt-btn active" id="btn-upload">Upload Files</button>
+                        <button type="button" class="opt-btn" id="btn-link">Paste Link</button>
+                    </div>
+
+                    <div id="upload-section" class="input-section">
+                        <div class="drop-zone" id="target-drop">
+                            <p>Drag & Drop Target Videos</p>
+                            <input type="file" id="target-input" accept="video/*" multiple hidden>
+                        </div>
+                    </div>
+
+                    <div id="link-section" class="input-section hidden">
+                        <div class="link-input-group">
+                            <input type="text" id="video-link" placeholder="Enter direct video URL (mp4)...">
+                            <button type="button" id="add-link-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div id="video-list"></div>
+                </div>
+            </div>
+
+            <button id="swap-btn" class="glow-btn">Start Face Swap</button>
+
+            <div id="status-panel" class="hidden">
+                <div class="loader"></div>
+                <p id="status-text">Processing your videos... This may take a while.</p>
+            </div>
+
+            <div id="result-panel" class="hidden">
+                <h2>Results Ready!</h2>
+                <div id="downloads-list"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
