@@ -20,3 +20,6 @@
 - **Disk Space**: Ensure you have ~500MB free for models + space for videos.
 - **Speed**: Without a GPU (NVIDIA CUDA), it might process at ~1-2 FPS.
 
+## Model
+- **Geting Model**: ensure you get the model from this drive https://drive.google.com/drive/folders/1M7jZkFbL56zKCuDMLFnU0LK2-iGckCN1 
+
